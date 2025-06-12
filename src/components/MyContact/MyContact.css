@@ -1,0 +1,39 @@
+.MyContact {
+    font-family: monospace;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        gap: .5vw;
+        text-align: center;
+        margin-bottom: 1vw;
+
+        img {
+            opacity: .5;
+            width: 3.7rem;
+
+            transition: .2s;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 1;
+                filter: drop-shadow(0 0 0.75rem rgba(0, 217, 255, 0.37)) brightness(1.2);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .MyContact {
+        .logo {
+            img {
+                width: 3rem;
+            }
+
+        }
+    }
+}

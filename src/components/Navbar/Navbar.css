@@ -1,0 +1,124 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+  border-bottom: 1px solid rgb(54, 54, 54);
+  font-family: monospace;
+  color: white;
+  flex-wrap: wrap;
+
+  .MyProfileText {
+    text-shadow: 0 0 2rem aqua;
+    transition: .5s;
+    cursor: default;
+    filter: drop-shadow(0 0 1rem rgb(0, 162, 255));
+
+  }
+}
+
+.Navbar a {
+  color: white;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.Navbar h1 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.Navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-size: 1rem;
+}
+
+.Navbar li:hover {
+  color: #00ffff;
+}
+
+.Back {
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  font-family: monospace;
+  color: white;
+  background: rgba(46, 46, 46, 0.5);
+  padding: .2rem .5rem;
+  height: 2.2rem;
+  border-radius: 2rem;
+  top: 44%;
+  left: 1rem;
+  transition: top 0.2s ease-out;
+  background: linear-gradient(120deg, black 0%, rgb(2, 91, 143) 50%, rgb(0, 36, 56)) 100%;
+  background-size: 200% 200%;
+  background-position: 200% 0;
+  transition: .5s;
+  filter: drop-shadow(0 0 5rem rgba(0, 255, 255, 1));
+
+  &:hover {
+    animation: 5s Nav_Bg_Anm;
+    cursor: pointer;
+    filter: brightness(1.5);
+    filter: drop-shadow(0 0 .7rem aqua);
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    transform: translateY(-.7rem);
+  }
+
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@keyframes Nav_Bg_Anm {
+  0% {
+    background-position: -100% 0;
+  }
+
+  50% {
+    background-position: 200% 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .Back {
+    display: none !important;
+  }
+
+  .Navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .Navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .Navbar li {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,100 @@
+.MyExperience {
+    font-family: monospace;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+
+    .FiveM,
+    .WebServer {
+        h1 {
+            text-align: center;
+        }
+
+        .List {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 1rem;
+            gap: 5rem;
+
+            .item {
+                filter: drop-shadow(0 0 3rem rgba(0, 174, 255, 0.2)) brightness(.5);
+                transition: .5s;
+                
+
+                h1 {
+                    font-size: 1.0rem;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                    background: rgba(255, 255, 255, 0.1);
+                    padding: .2rem 1rem;
+                    transform: skewX(-15deg);
+                }
+
+                img {
+                    width: 10rem;
+                    border-radius: 1rem;
+                }
+
+                &:hover {
+                    filter: drop-shadow(0 0 3rem rgba(0, 174, 255, 1)) brightness(1);
+                }
+
+                .ListServer {
+                    display: contents;
+
+                    h2 {
+                        margin-bottom: -.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .FiveM {
+        margin-bottom: 2rem;
+        .List{
+            .item {
+                cursor: default;
+            }
+        }
+    }
+    .WebServer {
+        .List{
+            .item {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .MyExperience {
+
+        .FiveM,
+        .WebServer {
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .List {
+                display: block;
+                justify-items: center;
+
+                .item {
+                    text-align: center;
+
+                    h1 {
+                        font-size: 1.4rem;
+                    }
+
+                    h2 {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+    }
+}

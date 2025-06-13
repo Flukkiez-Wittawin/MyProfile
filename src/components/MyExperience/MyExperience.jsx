@@ -25,7 +25,7 @@ function MyExperience() {
       </div>
 
       <div className="WebServer">
-        <h1>Experience of WERSITE</h1>
+        <h1>Experience of Website</h1>
         <div className="List">
           <div className="item" onClick={()=> window.location = `http://flkzteam-developer.ddns.net:10/`}>
             <h1>FLKZ TEAM WEBSITE</h1>

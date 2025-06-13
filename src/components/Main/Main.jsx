@@ -47,7 +47,7 @@ function Main() {
           Study : <span>Cyber Security in KhonKaen University</span>
         </h2>
         <h2>
-          Programming Languages : <span>JS, TS, PHP, GO</span>
+          Programming Languages : <span>JS, TS, PHP, GO, Lua</span>
         </h2>
         <h2>
           Framework : <span>React, VueJs, Svelte, NodeJs</span>
